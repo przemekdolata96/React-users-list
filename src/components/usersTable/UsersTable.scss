@@ -1,0 +1,26 @@
+@import '../../theme/variables.scss';
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: $gray-300;
+
+    th {
+        text-transform: uppercase;
+        text-align: left;
+        padding: 0.5rem 1rem;
+        background-color: $gray-300;
+    }
+
+    td {
+        padding: 1rem;
+    }
+
+    tr:nth-child(even) {
+        background-color: $white;
+    }
+
+    tr:nth-child(odd) {
+        background-color: $gray-200;
+    }
+}
