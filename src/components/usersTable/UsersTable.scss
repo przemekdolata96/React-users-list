@@ -2,6 +2,7 @@
 
 table {
     width: 100%;
+    font-size: 0.8rem;
     border-collapse: collapse;
     background-color: $gray-300;
 
@@ -10,10 +11,24 @@ table {
         text-align: left;
         padding: 0.5rem 1rem;
         background-color: $gray-300;
+        color: $gray-500;
     }
 
     td {
         padding: 1rem;
+
+        svg.remove-icon {
+            font-size: 1.5rem;
+            color: $gray-300;
+            float: right;
+        }
+    }
+
+    td.placeholder {
+        color: $gray-300;
+        padding: 1rem;
+        text-align: center;
+        line-height: 1.5rem;
     }
 
     tr:nth-child(even) {
@@ -22,5 +37,12 @@ table {
 
     tr:nth-child(odd) {
         background-color: $gray-200;
+    }
+
+    .row-index {
+        border: 1px solid $gray-250;
+        padding: 0.3rem 0.5rem;
+        background-color: $white;
+        border-radius: 50%;
     }
 }

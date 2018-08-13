@@ -1,7 +1,9 @@
 @import '../../theme/variables.scss';
 
 button {
-    width: 10rem;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 12rem;
     height: 3rem;
     font-size: 1.2rem;
     color: $green;
@@ -26,4 +28,16 @@ button {
 button.filled {
     background-color: $green;
     color: $white;
+}
+
+button.reset {
+    font-size: 1rem;
+    text-decoration: underline;
+    color: $red;
+    width: 8rem;
+    border: none;
+
+    &:hover {
+        background-color:$white;
+    }
 }

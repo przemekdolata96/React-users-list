@@ -19,15 +19,22 @@ export default class Input extends Component {
         );
     }
 
+    componentWillReceiveProps(nextProps) {
+        this.setState({ 
+            value: nextProps.value  
+        });
+    }
+
   render() {
     return (    
-        <input 
+        <input
             className={this.props.className}
             type="text" 
             placeholder={this.props.placeholder} 
             value={this.state.value} 
             onChange={this.handleChange}
             maxLength={this.props.maxLength}
+            autoFocus={this.props.autoFocus}
             />
     )
   }
